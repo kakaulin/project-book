@@ -1,0 +1,393 @@
+/* Шрифты ↓ */
+
+@font-face {
+    font-family: Nodesto Cyrillic;
+    src: url("fonts/NodestoCyrillicRegular.ttf");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SF Mono;
+    src: url("fonts/SFMonoLight.ttf");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: SF Mono;
+    src: url("fonts/SFMonoSemibold.ttf");
+    font-weight: 700;
+    font-display: swap;
+}
+
+/* Стили html-тегов ↓ */
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    color: #000;
+    font-family: SF Mono;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    margin: 0px 0px 16px 0px;
+}
+
+p {
+    color: #000;
+    font-family: SF Mono;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%; /* 32.4px */
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: #ffffff;
+    font-family: SF Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    margin: 0px;
+}
+
+button {
+    font-family: SF Mono;
+    font-weight: 300;
+    font-size: 24px;
+    color: #ffffff;
+    padding: 16px 32px;
+    align-items: center;
+    border: none;
+    background-color: #2C42B8;
+}
+
+/* Стили классов ↓ */
+
+.first {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 128px 128px 128px;
+}
+
+.first_header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.first_header p {
+    color: #000000;
+    font-family: SF Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    margin: 0px;
+}
+
+.first_header__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.first_header__links ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+.first_header__links ul li {
+    color: #2C42B8;
+    text-decoration: none;
+    border-bottom: 1px solid #CCC8FF;
+}
+
+.first_header__avatar {
+    width: 56px;
+    height: 56px;
+}
+
+.first_about {
+    margin-top: 128px;
+    width: 50%;
+}
+
+.first_about h1 {
+    color: #000;
+}
+
+.first_about p {
+    color: #000;
+}
+
+.first_about a {
+    color: #000;
+}
+
+/*  Стили для главной страницы ↓  */
+
+.projects {
+    margin: 0px 128px 0px 128px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.projects_block {
+    position: relative;
+    width: 100%;
+}
+
+.projects_block::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.projects_block__content {
+    position: absolute;
+    padding: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #626992;
+}
+
+.projects_block__content a {
+    color: white;
+}
+
+#projects_block__dices {
+    background-color: #2C42B8;
+}
+
+#projects_block__chinese-time {
+    background-color: #FAA629;
+}
+
+#projects_block__task-list {
+    background-color: #161616;
+}
+
+/* Стили для страницы: «Кубики из D&D» ↓ */
+
+#dices {
+    background-color: #2C42B8;
+}
+
+#dices_header {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+#dices_header__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+#dices_header__links p {
+    color: #ffffff;
+    font-family: SF Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    margin: 0px;
+}
+
+#dices_header__links ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+#dices_header__links ul li {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+#dices_about {
+    margin-top: 128px;
+    width: 50%;
+}
+
+#dices_about h1{
+    color: #ffffff;
+}
+
+#dices_about p{
+    color: #ffffff;
+}
+
+#dices_about a{
+    color: #ffffff;
+}
+
+
+/*
+
+.d20-block {
+    width: 25%;
+    padding: 96px 0px 64px 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.d20 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.answer {
+    width: 400px;
+	height: 250px;
+    margin: auto;
+
+    color: #2C42B8;
+    font-family: Nodesto Cyrillic;
+    font-size: 96px;
+    z-index: 1;
+    text-align: center;
+	
+}
+
+*/
+
+/* Стили для страницы: «Время на китайском» ↓ */
+
+#chinese-time {
+    background-color: #FAA629;
+}
+
+#chinese-time_header__links p {
+    color: #ffffff;
+    font-family: SF Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    margin: 0px;
+}
+
+#chinese-time_header__links ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+#chinese-time_header__links ul li {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+#chinese-time_about h1{
+    color: #ffffff;
+}
+
+#chinese-time_about p{
+    color: #ffffff;
+}
+
+#chinese-time_about a{
+    color: #ffffff;
+}
+
+/* Стили для страницы: Список задач ↓ */
+
+#task-list {
+    background-color: #161616;
+}
+
+#task-list_header__links p {
+    color: #ffffff;
+    font-family: SF Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 135%;
+    margin: 0px;
+}
+
+#task-list_header__links ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+#task-list_header__links ul li {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+#task-list_about h1{
+    color: #ffffff;
+}
+
+#task-list_about p{
+    color: #ffffff;
+}
+
+#task-list_about a{
+    color: #ffffff;
+}
+
+
+/* Адаптивная верстка ↓ */
+
+@media (max-width: 420px) {
+
+    body {
+        margin: 8px 24px 0px 24px;
+    }
+
+    .about-block {
+        margin-top: 64px;
+        width: 100%;
+    }
+
+    .tripple-project-block {
+        margin-top: 64px;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
